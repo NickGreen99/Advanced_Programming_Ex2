@@ -10,7 +10,7 @@ public class Product {
 	private String batchno;
 	private double price;
 	private int noofproduct;
-
+	private String color;
 	public int getId() {
 		return id;
 	}
@@ -25,6 +25,14 @@ public class Product {
 
 	public void setPname(String pname) {
 		this.pname = pname;
+	}
+	
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
 	}
 
 	public String getBatchno() {
@@ -51,12 +59,13 @@ public class Product {
 		this.noofproduct = noofproduct;
 	}
 
-	public Product(int id, String pname, String batchno, double price, int noofproduct) {
+	public Product(int id, String pname, String batchno, double price, int noofproduct,String color) {
 		super();
 		this.id = id;
 		this.pname = pname;
 		this.batchno = batchno;
 		this.price = price;
 		this.noofproduct = noofproduct;
+		this.color = color;
 	}
 }
